@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'aveuglette</title>
+    <link href="réserver.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar">
+    <a href="index.html"><img src="logo%20pastille%20jaune@3x.png" alt="Logo" /></a>
+    <ul class="nav-links">
+        <li><a href="réserver.html">Réserver</a></li>
+    </ul>
+    <button class="nav-contact-btn" id="navContactBtn">Nous Contacter</button>
+</div>
+<h1>Réservez</h1>
+<!-- Section de réservation avec les 3 formulaires -->
+<div class="reservation-section" id="reservation">
+    <!-- Formule Solo -->
+    <div class="form-container form-solo active" id="form-solo">
+        <h2>Formule Solo</h2>
+        <p class="formula-description">Idéal pour une immersion totale. Vivez l'expérience l'Aveuglette en solitaire et découvrez vos sens autrement.</p>
+
+        <img src="salad-2851253_1280.jpg" alt="Arrière-plan" class="form-background-image">
+
+        <form>
+            <div class="form-grid" id="form-grid">
+                <div>
+                    <label for="solo-name">Nom</label>
+                    <input type="text" id="solo-name" name="name" placeholder="Entrez votre nom" required>
+                </div>
+                <div>
+                    <label for="solo-email">Email</label>
+                    <input type="email" id="solo-email" name="email" placeholder="Entrez votre adresse mail" required>
+                </div>
+                <div>
+                    <label for="solo-date">Date</label>
+                    <input type="date" id="solo-date" name="date" required>
+                </div>
+                <div>
+                    <label for="solo-time">Heure</label>
+                    <input type="time" id="solo-time" name="time" required>
+                </div>
+                <div>
+                    <label for="solo-guests">Nombre de personnes</label>
+                    <input type="number" id="solo-guests" name="guests" min="1" max="1" value="1" placeholder="Nombre de convives" required readonly>
+                </div>
+                <div>
+                    <label for="solo-allergies">Allergies</label>
+                    <textarea id="solo-allergies" name="allergies" placeholder="Mentionnez vos allergies"></textarea>
+                </div>
+            </div>
+            <button class="button2" id="button1" type="submit">Réserver</button>
+        </form>
+    </div>
+
+    <!-- Formule Duo -->
+    <div class="form-container form-duo" id="form-duo">
+        <h2>Formule Duo</h2>
+        <p class="formula-description">Parfait pour un couple ou entre amis. Partagez l'expérience sensorielle à deux.</p>
+
+        <img src="shrimp-2262339_1280.jpg" alt="Arrière-plan" class="form-background-image">
+
+        <form>
+            <div class="form-grid">
+                <div>
+                    <label for="duo-name">Nom</label>
+                    <input type="text" id="duo-name" name="name" placeholder="Entrez votre nom" required>
+                </div>
+                <div>
+                    <label for="duo-email">Email</label>
+                    <input type="email" id="duo-email" name="email" placeholder="Entrez votre adresse mail" required>
+                </div>
+                <div>
+                    <label for="duo-date">Date</label>
+                    <input type="date" id="duo-date" name="date" required>
+                </div>
+                <div>
+                    <label for="duo-time">Heure</label>
+                    <input type="time" id="duo-time" name="time" required>
+                </div>
+                <div>
+                    <label for="duo-guests">Nombre de personnes</label>
+                    <input type="number" id="duo-guests" name="guests" min="2" max="2" value="2" placeholder="Nombre de convives" required readonly>
+                </div>
+                <div>
+                    <label for="duo-allergies">Allergies</label>
+                    <textarea id="duo-allergies" name="allergies" placeholder="Mentionnez vos allergies"></textarea>
+                </div>
+                <div>
+                    <label for="duo-occasion">Occasion spéciale ?</label>
+                    <input type="text" id="duo-occasion" name="occasion" placeholder="Anniversaire, Saint-Valentin...">
+                </div>
+                <div>
+                    <label for="duo-preferences">Préférences</label>
+                    <input type="text" id="duo-preferences" name="preferences" placeholder="Préférences alimentaires">
+                </div>
+            </div>
+            <button class="button2" id="bt11" type="submit">Réserver</button>
+        </form>
+    </div>
+
+    <!-- Formule Famille -->
+    <div class="form-container form-famille" id="form-famille">
+        <h2>Formule Famille</h2>
+        <p class="formula-description">Idéal pour les sorties familiales. Découvrez ensemble une nouvelle façon de savourer la cuisine.</p>
+
+        <img src="plate-2720966.jpg" alt="Arrière-plan" class="form-background-image">
+
+        <form>
+            <div class="form-grid">
+                <div>
+                    <label for="famille-name">Nom</label>
+                    <input type="text" id="famille-name" name="name" placeholder="Entrez votre nom" required>
+                </div>
+                <div>
+                    <label for="famille-email">Email</label>
+                    <input type="email" id="famille-email" name="email" placeholder="Entrez votre adresse mail" required>
+                </div>
+                <div>
+                    <label for="famille-date">Date</label>
+                    <input type="date" id="famille-date" name="date" required>
+                </div>
+                <div>
+                    <label for="famille-time">Heure</label>
+                    <input type="time" id="famille-time" name="time" required>
+                </div>
+                <div>
+                    <label for="famille-guests">Nombre de personnes</label>
+                    <input type="number" id="famille-guests" name="guests" min="3" max="6" value="4" placeholder="Nombre de convives" required>
+                </div>
+                <div>
+                    <label for="famille-allergies">Allergies</label>
+                    <textarea id="famille-allergies" name="allergies" placeholder="Mentionnez vos allergies"></textarea>
+                </div>
+                <div>
+                    <label for="famille-enfants">Nombre d'enfants</label>
+                    <input type="number" id="famille-enfants" name="enfants" min="0" max="4" value="0" placeholder="Nombre d'enfants" required>
+                </div>
+                <div>
+                    <label for="famille-preferences">Préférences</label>
+                    <input type="text" id="famille-preferences" name="preferences" placeholder="Préférences alimentaires">
+                </div>
+            </div>
+            <button class="button2" type="submit">Réserver</button>
+        </form>
+    </div>
+</div>
+<div class="social-media">
+    <h3 class="social-title">Suivez-nous sur les réseaux sociaux</h3>
+    <div class="social-icons">
+        <a href="#" class="social-icon">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="#" class="social-icon">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h5>À propos</h5>
+            <p>À l'Aveuglette : Laissez-vous envoûter par les saveurs, dans l'obscurité totale.</p>
+        </div>
+        <div class="footer-section">
+            <h5>Services</h5>
+            <ul>
+                <li>Expérience sensorielle</li>
+                <li>Gastronomie à l'aveugle</li>
+                <li>Événements privés</li>
+                <li>Ateliers culinaires</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h5>Informations légales</h5>
+            <ul>
+                <li><a href="mentions-legales.html">Mentions légales</a></li>
+                <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                <li><a href="gestion-cookies.html">Gestion des cookies</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h5>Contact</h5>
+            <p>Vous pouvez nous joindre par email ou via notre formulaire de contact.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 À l'Aveuglette. Tous droits réservés.</p>
+    </div>
+</footer>
+<div class="cursor" id="cursor"></div>
+<div class="loader">
+    <img src="logo%20rond%20blanc@3x.png" alt="Logo" class="loader__logo">
+    <span class="loader__text">0%</span>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="réserver.js"></script>
+</body>
+</html>

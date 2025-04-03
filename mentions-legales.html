@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mentions_Legales.css" rel="stylesheet">
+    <title>Mentions Légales - À l'Aveuglette</title>
+</head>
+<body>
+<div class="navbar">
+    <a href="index.html"><img src="logo%20pastille%20jaune@3x.png" alt="Logo" /></a>
+    <ul class="nav-links">
+        <li><a href="réserver.html">Réserver</a></li>
+    </ul>
+    <button class="nav-contact-btn" id="navContactBtn">Nous Contacter</button>
+</div>
+<div class="container">
+    <h1>Mentions Légales</h1>
+
+    <h2>Éditeur du site</h2>
+    <p><strong>Nom de l'entreprise :</strong> À l'Aveuglette</p>
+    <p><strong>Adresse :</strong> 12 Rue des Saveurs, 59000 Lille</p>
+    <p><strong>Téléphone :</strong> 03 20 45 67 89</p>
+    <p><strong>Email :</strong> contact@alaveuglette.fr</p>
+    <p><strong>Directeur de publication :</strong> Nom du responsable</p>
+
+    <h2>Hébergement</h2>
+    <p><strong>Hébergeur :</strong> Nom de l'hébergeur</p>
+    <p><strong>Adresse :</strong> Adresse de l'hébergeur</p>
+    <p><strong>Téléphone :</strong> Téléphone de l'hébergeur</p>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>Tout le contenu du site (textes, images, logos, etc.) est la propriété exclusive de À l'Aveuglette, sauf mention contraire.</p>
+
+    <h2>Cookies</h2>
+    <p>Le site peut utiliser des cookies afin d'améliorer l'expérience utilisateur.</p>
+
+    <h2>Liens hypertextes</h2>
+    <p>Les liens hypertextes présents sur ce site peuvent rediriger vers d'autres sites dont nous ne contrôlons pas le contenu.</p>
+</div>
+<div class="social-media">
+    <h3 class="social-title">Suivez-nous sur les réseaux sociaux</h3>
+    <div class="social-icons">
+        <a href="#" class="social-icon">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="#" class="social-icon">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h5>À propos</h5>
+            <p>À l'Aveuglette : Laissez-vous envoûter par les saveurs, dans l'obscurité totale.</p>
+        </div>
+        <div class="footer-section">
+            <h5>Services</h5>
+            <ul>
+                <li>Expérience sensorielle</li>
+                <li>Gastronomie à l'aveugle</li>
+                <li>Événements privés</li>
+                <li>Ateliers culinaires</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h5>Informations légales</h5>
+            <ul>
+                <li><a href="mentions-legales.html">Mentions légales</a></li>
+                <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                <li><a href="gestion-cookies.html">Gestion des cookies</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h5>Contact</h5>
+            <p>Vous pouvez nous joindre par email ou via notre formulaire de contact.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 À l'Aveuglette. Tous droits réservés.</p>
+    </div>
+</footer>
+<div class="loader">
+    <img src="logo%20rond%20blanc@3x.png" alt="Logo" class="loader__logo">
+    <span class="loader__text">0%</span>
+</div>
+<div id="formWrapper">
+    <div class="form-container" id="contactForm">
+        <h2>Contactez-nous</h2>
+        <form>
+            <label for="name">Nom</label>
+            <input type="text" id="name" placeholder="Entrer votre nom" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Entrer votre adresse mail" required>
+
+            <label for="subject">Objet</label>
+            <input type="text" id="subject" placeholder="Entrer l'objet du message" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Entrer votre message" required></textarea>
+
+            <button type="submit">Contactez-nous</button>
+        </form>
+    </div>
+</div>
+<div class="cursor" id="cursor"></div>
+<script src="mention.js"></script>
+</body>
+</html>
